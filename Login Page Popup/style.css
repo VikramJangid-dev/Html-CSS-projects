@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700;800&family=Poppins:wght@400;600;800&display=swap');
+
+/* Resets Style */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+}
+
+/* Variables */
+:root {
+  --primary-color: #9040db;
+  --secondary-color: #fff;
+}
+
+
+body {
+  width: 100%;
+  height: 100%;
+}
+
+/* Login Button  */
+.login-btn {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  margin: 5px;
+  padding: 10px 25px;
+  border: none;
+  border-radius: 10px;
+}
+
+/* background overlay */
+.overlay {
+  width: 100%;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  z-index: -1;
+  opacity: 0;
+  transition: 0.1s ease;
+}
+.show-overlay {
+  opacity: 1;
+}
+
+/* Login Form */
+.login-form {
+  width: 350px;
+  padding: 20px;
+  position: absolute;
+  top: -50%;
+  left: 50%;
+  border-radius: 10px;
+  transform: translate(-50%, -50%);
+  background-color: var(--primary-color);
+  text-align: center;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+  transition: 0.3s ease;
+}
+
+.login-form span {
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  width: 30px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  font-weight: bold;
+  font-size: 20px;
+  color: var(--secondary-color);
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s ease;
+}
+.login-form span:hover {
+  opacity: 1;
+}
+
+.login-form .input-field {
+  margin: 15px 0;
+  text-align: left;
+  color: var(--secondary-color);
+}
+.login-form label {
+  display: block;
+  margin: 2px 0;
+}
+
+.login-form input {
+  width: 100%;
+  height: 30px;
+  border: none;
+  outline: none;
+  color: var(--secondary-color);
+  background-color: transparent;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.568);
+}
+input::placeholder {
+  color: #ffffff9c;
+}
+
+
+/* login button inside login popup */
+.login-form button {
+  background-color: var(--secondary-color);
+  margin-block: 10px;
+  padding: 5px 20px;
+  border: none;
+  color: var(--primary-color);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+  transition: 0.3s ease;
+}
+
+button:hover {
+  background-color: var(--primary-color);
+  color: var(--secondary-color);
+  cursor: pointer;
+}
